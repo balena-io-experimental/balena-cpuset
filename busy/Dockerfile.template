@@ -2,4 +2,4 @@ FROM resin/%%RESIN_MACHINE_NAME%%-debian
 
 RUN apt-get update && apt-get install -qy stress
 
-CMD stress -c 10
+CMD stress --verbose --cpu 10
