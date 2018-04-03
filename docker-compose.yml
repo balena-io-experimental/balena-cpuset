@@ -1,0 +1,8 @@
+version: '2'
+services:
+  idle:
+    build: ./idle
+    cpuset: 0
+  busy:
+    build: ./busy
+    cpuset: 1-3
