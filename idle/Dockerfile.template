@@ -1,3 +1,5 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-alpine
 
+RUN apk add --no-cache htop
+
 CMD while : ; do echo "Idling..."; sleep 15; done
