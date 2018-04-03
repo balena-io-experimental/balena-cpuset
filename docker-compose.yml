@@ -6,3 +6,5 @@ services:
   busy:
     build: ./busy
     cpuset: 1-3
+    depends_on:
+      - idle
